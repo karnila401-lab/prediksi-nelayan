@@ -24,7 +24,7 @@ tidak digunakan sebagai fitur untuk menghindari kebocoran target.
 
 ## Menjalankan aplikasi
 
-Disarankan menggunakan Python 3.10 atau lebih baru.
+Disarankan menggunakan Python 3.10.
 
 ```powershell
 python -m venv .venv
