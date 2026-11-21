@@ -116,10 +116,13 @@ model akan lebih baik pada data baru dari periode atau kondisi yang berbeda.
 
 ## Git
 
-Repository lokal telah disiapkan. Perintah dasar:
+Clone repository dan kirim perubahan ke branch `main`:
 
 ```powershell
+git clone https://github.com/karnila401-lab/prediksi-nelayan.git
+cd prediksi-nelayan
 git status
-git add .
-git commit -m "Tambahkan project prediksi hasil tangkapan ikan"
+git add README.md
+git commit -m "Perbarui panduan Git"
+git push origin main
 ```
