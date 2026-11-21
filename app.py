@@ -14,6 +14,34 @@ st.set_page_config(
     layout="wide",
 )
 
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #f3f8fc;
+    }
+
+    [data-testid="stMetric"] {
+        background-color: #ffffff;
+        border: 1px solid #d9e8f0;
+        border-radius: 0.75rem;
+        padding: 1rem;
+    }
+
+    button[data-testid="stBaseButton-primary"] {
+        background-color: #0b7285;
+        border-color: #0b7285;
+    }
+
+    button[data-testid="stBaseButton-primary"]:hover {
+        background-color: #095c6b;
+        border-color: #095c6b;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 @st.cache_data
 def load_data(path: str, modified_time: float) -> pd.DataFrame:
